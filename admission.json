@@ -1,0 +1,94 @@
+{
+  "id": "64f14feb-c927-49e2-8d06-5dec8036db6f",
+  "name": "admission",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "admission-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 4,
+          "condition": "",
+          "payload": {
+            "line": {
+              "type": "template",
+              "altText": "this is a buttons template",
+              "template": {
+                "type": "buttons",
+                "actions": [
+                  {
+                    "type": "message",
+                    "label": "ประถมศึกษา",
+                    "text": "ประถมศึกษา"
+                  },
+                  {
+                    "type": "message",
+                    "label": "มัธยมศึกษาตอนต้น",
+                    "text": "มัธยมศึกษาตอนต้น"
+                  },
+                  {
+                    "type": "message",
+                    "label": "มัธยมศึกษาตอนปลาย",
+                    "text": "มัธยมศึกษาตอนปลาย"
+                  }
+                ],
+                "title": "กรุณาเลือกหลักสูตร",
+                "text": "เลือกหลักสูตร"
+              }
+            }
+          },
+          "lang": "th"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "1b952578-e39e-42b2-ac30-aa9532850ed7",
+      "data": [
+        {
+          "text": "กรอกข้อมูลใหม่",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a5416b55-581f-4c30-ba22-df384238a7f1",
+      "data": [
+        {
+          "text": "สมัครเรียน",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}

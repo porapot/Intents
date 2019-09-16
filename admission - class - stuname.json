@@ -1,0 +1,73 @@
+{
+  "id": "ae7ef493-f11a-440f-b6c5-7e67e9afba8f",
+  "parentId": "07b143d8-ad78-48ed-96ba-c71a9a50c5d1",
+  "rootParentId": "07b143d8-ad78-48ed-96ba-c71a9a50c5d1",
+  "name": "admission - class - stuname",
+  "auto": true,
+  "contexts": [
+    "admission-class-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "admission-class.admission-class-custom",
+      "affectedContexts": [
+        {
+          "name": "admission-class-stuname-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ecc05ade-85c0-4a6d-ab9a-cea141984b9a",
+          "required": false,
+          "dataType": "@sys.person",
+          "name": "studentname",
+          "value": "$studentname",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "เลขบัตรประชาชนผู้สมัคร"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "4487fe0e-a376-4548-b962-db5f81698c28",
+      "data": [
+        {
+          "text": "ธีระ ทับฤทธิ์",
+          "alias": "studentname",
+          "meta": "@sys.person",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}

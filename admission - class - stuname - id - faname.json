@@ -1,0 +1,75 @@
+{
+  "id": "379e4014-8b68-4eac-9108-f08df5b3b446",
+  "parentId": "d64f8143-c08b-47ee-bdc5-989fa7462dba",
+  "rootParentId": "07b143d8-ad78-48ed-96ba-c71a9a50c5d1",
+  "name": "admission - class - stuname - id - faname",
+  "auto": true,
+  "contexts": [
+    "admission-class-stuname-id-followup",
+    "admission-class-followup",
+    "admission-class-stuname-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "admission-class.admission-class-custom.admission-class-stuname-custom.admission-class-stuname-id-custom",
+      "affectedContexts": [
+        {
+          "name": "admission-class-stuname-id-faname-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "cae21b31-eabd-49a1-b429-f213ae84ae15",
+          "required": false,
+          "dataType": "@sys.person",
+          "name": "fathername",
+          "value": "$fathername",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "ชื่อ-สกุลมารดา"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9e3b3e52-94c6-4331-ad2e-a2b6567c59ba",
+      "data": [
+        {
+          "text": "ธีรศักดิ์ ทับฤทธิ์",
+          "alias": "fathername",
+          "meta": "@sys.person",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}

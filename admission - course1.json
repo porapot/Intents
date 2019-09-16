@@ -1,0 +1,119 @@
+{
+  "id": "4b5c8628-675d-46b6-bb57-2644d8c5c9a9",
+  "parentId": "64f14feb-c927-49e2-8d06-5dec8036db6f",
+  "rootParentId": "64f14feb-c927-49e2-8d06-5dec8036db6f",
+  "name": "admission - course1",
+  "auto": true,
+  "contexts": [
+    "admission-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "admission.admission-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "8346dfae-131d-4b5f-8c9e-ce00b50fd8a9",
+          "required": false,
+          "dataType": "@courseType",
+          "name": "courseType",
+          "value": "$courseType",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 4,
+          "condition": "",
+          "payload": {
+            "line": {
+              "type": "template",
+              "altText": "this is a carousel template",
+              "template": {
+                "type": "carousel",
+                "actions": [],
+                "columns": [
+                  {
+                    "text": "เลือกระดับชั้นเรียน",
+                    "actions": [
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่ 1",
+                        "text": "ประถมศึกษาปีที่ 1"
+                      },
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่ 2",
+                        "text": "ประถมศึกษาปีที่ 2"
+                      },
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่  3",
+                        "text": "ประถมศึกษาปีที่ 3"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "เลือกระดับชั้นเรียน",
+                    "actions": [
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่ 4",
+                        "text": "ประถมศึกษาปีที่ 4"
+                      },
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่ 5",
+                        "text": "ประถมศึกษาปีที่ 5"
+                      },
+                      {
+                        "type": "message",
+                        "label": "ประถมศึกษาปีที่ 6",
+                        "text": "ประถมศึกษาปีที่ 6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "lang": "th"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "bdf909e8-5d64-4072-b3ec-3cf9ec5fc423",
+      "data": [
+        {
+          "text": "ประถมศึกษา",
+          "alias": "courseType",
+          "meta": "@courseType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}

@@ -1,0 +1,72 @@
+{
+  "id": "d64f8143-c08b-47ee-bdc5-989fa7462dba",
+  "name": "admission - class - stuname - id",
+  "auto": true,
+  "contexts": [
+    "admission-class-stuname-followup",
+    "admission-class-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "admission-class.admission-class-custom.admission-class-stuname-custom",
+      "affectedContexts": [
+        {
+          "name": "admission-class-stuname-id-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "679fa619-a87f-4acb-b117-b8c4041311a3",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "identificationID",
+          "value": "$identificationID",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "ชื่อ-สกุลบิดา"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "ac925995-29e1-4e03-a519-756bd1ccfa36",
+      "data": [
+        {
+          "text": "1546677876546",
+          "alias": "identificationID",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}

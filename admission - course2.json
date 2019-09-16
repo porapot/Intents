@@ -1,0 +1,94 @@
+{
+  "id": "adf1ce48-f9cb-4d35-a355-6d58626fa718",
+  "parentId": "64f14feb-c927-49e2-8d06-5dec8036db6f",
+  "rootParentId": "64f14feb-c927-49e2-8d06-5dec8036db6f",
+  "name": "admission - course2",
+  "auto": true,
+  "contexts": [
+    "admission-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "admission.admission-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "69cd16a2-1000-48fd-9ca4-20cea8b99b8b",
+          "required": false,
+          "dataType": "@courseType",
+          "name": "courseType",
+          "value": "$courseType",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 4,
+          "condition": "",
+          "payload": {
+            "line": {
+              "type": "template",
+              "altText": "this is a buttons template",
+              "template": {
+                "type": "buttons",
+                "actions": [
+                  {
+                    "type": "message",
+                    "label": "มัธยมศึกษาปีที่ 1",
+                    "text": "มัธยมศึกษาปีที่ 1"
+                  },
+                  {
+                    "type": "message",
+                    "label": "มัธยมศึกษาปีที่ 2",
+                    "text": "มัธยมศึกษาปีที่ 2"
+                  },
+                  {
+                    "type": "message",
+                    "label": "มัธยมศึกษาปีที่ 3",
+                    "text": "มัธยมศึกษาปีที่ 3"
+                  }
+                ],
+                "text": "เลือกระดับชั้นเรียน"
+              }
+            }
+          },
+          "lang": "th"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f175d0d4-683a-494b-ad4c-d731f2a9e617",
+      "data": [
+        {
+          "text": "มัธยมศึกษาตอนต้น",
+          "alias": "courseType",
+          "meta": "@courseType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "templates": []
+}
